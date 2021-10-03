@@ -1,5 +1,5 @@
 package factorymethod.figura;
 
- interface Figura {
+ interface FiguraIF {
 	public void descricao();
 }

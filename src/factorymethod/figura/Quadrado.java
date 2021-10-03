@@ -1,6 +1,6 @@
 package factorymethod.figura;
 
-class Quadrado implements Figura {
+class Quadrado implements FiguraIF {
 	private String nome;
 	
 	Quadrado() {
@@ -8,7 +8,7 @@ class Quadrado implements Figura {
 	}
 
 	@Override
-	public void descricao() {
+	 public void descricao() {
 		System.out.println(nome);
 	}
 

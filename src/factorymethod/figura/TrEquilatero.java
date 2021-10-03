@@ -1,6 +1,6 @@
 package factorymethod.figura;
 
-class TrEquilatero implements Figura {
+class TrEquilatero implements FiguraIF {
 	private String nome;
 	
 	TrEquilatero() {

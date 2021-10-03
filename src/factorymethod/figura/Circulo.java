@@ -1,6 +1,6 @@
 package factorymethod.figura;
 
- class Circulo implements Figura {
+ class Circulo implements FiguraIF {
 	private String nome;
 	
 	Circulo() {
