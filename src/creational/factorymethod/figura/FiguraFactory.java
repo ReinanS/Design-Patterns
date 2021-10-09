@@ -1,4 +1,4 @@
-package factorymethod.figura;
+package creational.factorymethod.figura;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -6,6 +6,11 @@ import java.util.Map;
 
  abstract class FiguraFactory {
 	abstract FiguraIF criarFigura();
+	private int sentinela = 0;
+	
+	FiguraFactory() {
+		sentinela++;
+	}
 	
 	private static HashMap<String, FiguraFactory> colecaoFiguras() {
 		HashMap<String, FiguraFactory> figuras = new HashMap<String, FiguraFactory>();
@@ -25,6 +30,12 @@ import java.util.Map;
 		
 		FiguraIF figura = figuras.get(nome).criarFigura();
 		return figura;
+	}
+	
+	public static FiguraIF nextFigura() {
+		HashMap<String, FiguraFactory> figuras = colecaoFiguras();		
+		return figuras.get("Quadrado").criarFigura();
+		
 	}
 	
 	public static ArrayList<FiguraIF> sequenciaFiguras() {

@@ -1,4 +1,4 @@
-package factorymethod.figura;
+package creational.factorymethod.figura;
 
 class Quadrado implements FiguraIF {
 	private String nome;

@@ -1,4 +1,4 @@
-package factorymethod.figura;
+package creational.factorymethod.figura;
 
 class TrEquilateroFactory extends FiguraFactory {
 

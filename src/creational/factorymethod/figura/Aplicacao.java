@@ -1,4 +1,4 @@
-package factorymethod.figura;
+package creational.factorymethod.figura;
 
 public class Aplicacao {
 	
@@ -6,6 +6,8 @@ public class Aplicacao {
 		FiguraIF figura = FiguraFactory.getFigura("Triangulo");
 		figura.descricao();
 		
-		FiguraFactory.sequenciaFiguras();
+		FiguraIF figura2 = FiguraFactory.nextFigura();
+		figura2.descricao();
+		
 	}
 }
